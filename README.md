@@ -1,4 +1,4 @@
 e# KipSmith
 
 
- http://docz.com/
+https://ramblekb.github.io/KipSmith/
