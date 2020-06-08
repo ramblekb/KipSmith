@@ -12,26 +12,46 @@ body, html {
   height: 100%;
   color: rgb(230, 239, 254);
   line-height: 1.8;
+  
   /* background-color: rgb(183, 250, 250); */
   background-image: url('./assets/images/Crys 3.png');
-  background-blend-mode:color-dodge;
+  background-blend-mode:soft-light;
   
 }
 
 /* Create a Parallax Effect */
-/* .bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+} 
+
+/* #rcorners1 {
+  border-radius: 25px;
+  background: white;
+  padding: 20px; 
+  width: auto;
+  height: auto;  
+}
+
+#rcorners3 {
+  border-radius: 25px;
+  background: url(paper.gif);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
 } */
 
 /* First image (Logo. Full height) */
-.bgimg-1 {
+/* .bgimg-1 {
   background-image: url('/assets/images/Crys 3.png');
   background-blend-mode: luminosity;
   min-height: 100%;
-}
+  opacity: 50%;
+} */
 
 /* Second image (Portfolio) */
 .bgimg-2 {
@@ -84,7 +104,7 @@ body, html {
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-block w3-red w3-bar-item w3-button">SEARCH</a>
+    <a href="#search" class="w3-bar-block w3-red w3-bar-item w3-button">SEARCH</a>
   </div>
 </div>
 
@@ -95,13 +115,12 @@ body, html {
   </div>
 </div>
 
-<div class="w3-content w3-container w3-padding-2">
-
-<p class="w3-center">“You begin saving the world by saving one man at a time; all else is grandiose romanticism or politics.”
-  ― Charles Bukowski</p>
+<div class="w3-content w3-container w3-padding-2 w3-white" id="rcorners1">
+<p class="w3-center"><em>“You begin saving the world by saving one man at a time; all else is grandiose romanticism or politics.”
+  ― Charles Bukowski</em></p>
   </div>
 
-<div class="bgimg-2 w3-display-container w3-opacity-min" id="about">
+<div class="bgimg-2 w3-display-container" id="about">
   <div class="w3-center w3-padding-64">
     <span class="w3-xxlarge w3-text-white w3-wide">ABOUT</span>
   </div>
@@ -110,9 +129,13 @@ body, html {
 <!-- DIAMOND HERE -->
 
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-2">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-right"><em>From Lookout Mountain, GA. Thirty four times aroud the sun. I like great websites, either eye candy, personality, how it spins, native-lly fluid and enjoyable to immerse in for a time.
+<div class="w3-content w3-container w3-padding-2 w3-white" id="rcorners1">
+
+  <h3 class="w3-center"></h3>
+  <p class="w3-right"><em>Greetings!
+    <br>
+    <br>
+    I am Kip Bradley Smith from Lookout Mountain, GA. Thirty four times aroud the sun. I like great websites, either eye candy, personality, how it spins, native-lly fluid and enjoyable to immerse in for a time.
 
     I became interested in web development when I figured out how to embed a music video on myspace for my band, that was was 2006. Then I learned how to record music but more how to edit with ProTools. Engaged, figured out how to make lo-fi music videos, posters, alter pictures on my parents 90's Mac, that I had 2 GB of RAM put in and is still my champ. That was in Taylor, MS were I rented a hunting cabin,.
     
@@ -148,7 +171,7 @@ body, html {
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min" id="portfolio">
+<div class="bgimg-2 w3-display-container" id="portfolio">
   <div class="w3-center w3-padding-64">
     <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
   </div>
@@ -287,7 +310,7 @@ body, html {
 </div>
 
 <!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min" id="contact">
+<div class="bgimg-3 w3-display-container" id="contact">
   <div class="w3-center w3-padding-64">
      <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
   </div>
@@ -344,10 +367,22 @@ body, html {
 </div>
 
 
-
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"><p>“First paycheck I get, I thought, I'm going to get myself a room near the downtown L.A. Public Library.”
-    ― Charles Bukowski</p></i>Well, it was a new town. Maybe I'd get lucky.
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-bottom"><em><br>Back To Top</em></i></a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/kipbs" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/handlinesband/?hl=en" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/kipbradleysmith/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <p></p>
+  </div>
+
+</footer> 
+
+
+
+<!-- <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"><em><p>“First paycheck I get, I thought, I'm going to get myself a room near the downtown L.A. Public Library.”
+    ― Charles Bukowski</em></p></i>Well, it was a new town. Maybe I'd get lucky.
     The rain stopped and the sun came out. I was in the black
     district. Iwalked along slowly.
     "Hey, poor white trash!"
@@ -363,7 +398,7 @@ body, html {
     <p></p>
   </div>
 
-</footer> 
+</footer>  -->
  
 <script>
 // Modal Image Gallery
