@@ -7,16 +7,16 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1,h2,h3,h4,h5,h6,p {font-family: "Lato", sans-serif;}
+body,h1,h2,h3,h4,h5,h6,p,em,a {font-family: "Lato", sans-serif;}
 body, html {
   height: 100%;
-  color: rgb(230, 239, 254);
+  color: rgb(4, 18, 42);
   line-height: 1.8;
   
-  /* background-color: rgb(183, 250, 250); */
-  background-image: url('./assets/images/Crys 3.png');
-  background-blend-mode:soft-light;
-  
+  background-color: rgb(183, 250, 250);
+  /* background-image: url('./assets/images/Crys 3.png');
+  opacity: .5; */
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Create a Parallax Effect */
@@ -27,7 +27,7 @@ body, html {
   background-size: cover;
 } 
 
-/* #rcorners1 {
+#rcorners1 {
   border-radius: 25px;
   background: white;
   padding: 20px; 
@@ -43,7 +43,7 @@ body, html {
   padding: 20px; 
   width: 200px;
   height: 150px;  
-} */
+} 
 
 /* First image (Logo. Full height) */
 /* .bgimg-1 {
@@ -89,14 +89,14 @@ body, html {
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"> -->
+    <!-- <div class="w3-bar-item w3-hide-small w3-center">   -->
       
-      <!-- <p class="w3-center">“You begin saving the world by saving one man at a time; all else is grandiose romanticism or politics.”
+      <!-- <p>“You begin saving the world by saving one man at a time; all else is grandiose romanticism or politics.”
           ― Charles Bukowski</p> -->
 
 
-      <!-- <i class="fa fa-search"></i> -->
-    <!-- </a> -->
+        <!-- </div> -->
+
   </div>
 
   <!-- Navbar on small screens -->
@@ -111,11 +111,11 @@ body, html {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">//~Kip Smith~//<span class="w3-hide-small"></span>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">//~Kip Bradley Smith~//<span class="w3-hide-small"></span>
   </div>
 </div>
 
-<div class="w3-content w3-container w3-padding-2 w3-white" id="rcorners1">
+<div class="w3-content w3-container w3-padding-2 w3-white" style="white-space:nowrap;">
 <p class="w3-center"><em>“You begin saving the world by saving one man at a time; all else is grandiose romanticism or politics.”
   ― Charles Bukowski</em></p>
   </div>
@@ -163,7 +163,8 @@ body, html {
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
       <p class="w3-large w3-center w3-padding-16">~Site Compass~</p>
-<p>Welcome to my personal website! Here you will find my story, information, past work and contact. Thank you for your time and interest in my work.<br>---<br>I am interested in front-in web development & content creation for branding & marketing agencies.</p>
+<p><em>Welcome, to my personal website! Here you will find my story, information, past work and contact. Thank you for your time and interest in my work.</em><br>---<br>I am interested in front-in web development, content creation &branding.
+  <br>---<br><em>All the Best, Kip</em></p>
     </div>
   </div>
   
@@ -178,7 +179,8 @@ body, html {
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-3">
+<!-- <div class="w3-content w3-container w3-padding-2 w3-white" style="white-space:nowrap;"> -->
+  <div class="w3-content w3-container w3-padding-5 w3-white" style="white-space:nowrap;">
   <h3 class="w3-center">MY WORK</h3>
   <p class="w3-center"><em>Here are some of my latest projects I've collaborated on or developed.<br> Click an image to continiue</em></p><br>
 </div>
@@ -193,6 +195,29 @@ body, html {
  
   <div class="w3-row-padding">
     <div class="w3-col s4">
+      <h7>Bottle Nose Records</h7>
+     <a href="https://new-girl.herokuapp.com/" target="_blank" class="thumbnail">
+      <img src="./assets/images/mars.jpg" style="width:100%" class="w3-hover-opacity" alt="Crystal Timer">
+
+      <h8>GitHub Link</h8>
+      <a href="https://github.com/ramblekb/New_Girl" target="_blank" class="thumbnail"></a>
+      <p>Description: Full Stack secure login website trading and tracking records.</p>
+
+    </div>
+    
+    <div class="w3-col s4">
+      <h7>Studio Boca</h7>
+      <!-- <h8>Deployed App</h8> -->
+     <a href="https://studio-boca.com" target="_blank" class="thumbnail">
+      <img src="./assets/images/mercury.jpg" style="width:100%" class="w3-hover-opacity" alt="Crystal Timer">
+
+      <h8>GitHub Link</h8>
+      <a href="https://github.com/ramblekb/bocastu" target="_blank" class="thumbnail"></a>
+      <p>Description: Interior Design Small Business Site.</p>
+
+    </div>
+
+    <div class="w3-col s4">
       <h7>Memory Game</h7>
      <a href="https://clek.herokuapp.com/" target="_blank" class="thumbnail">
       <img src="./assets/images/neptune.jpg" style="width:100%" class="w3-hover-opacity" alt="Crystal Timer">
@@ -203,7 +228,7 @@ body, html {
 
     </div>
 
-    <div class="w3-col s4">
+    <div class="w3-col s4" class="thumbnail">
       <h7>Friend Finder</h7>
      <a href="https://yomakeamatch.herokuapp.com/" target="_blank" class="thumbnail">
       <img src="./assets/images/jupiter.jpg" style="width:100%" class="w3-hover-opacity" alt="Crystal Timer">
@@ -214,29 +239,19 @@ body, html {
 
     </div>
 
-    <div class="w3-col s4">
-      <h7>Liri Bot</h7>
-     <a href="https://youtu.be/0I4sv3HhR-c" target="_blank" class="thumbnail">
-      <img src="./assets/images/mars.jpg" style="width:100%" class="w3-hover-opacity" alt="Crystal Timer">
-
-      <h8>GitHub Link</h8>
-      <a href="https://github.com/ramblekb/liri-node-app" target="_blank" class="thumbnail"></a>
-      <p>Description: Node.js app that depends on user input from the command line. This is a video walk-through</p>
-
-    </div>
 
     <div class="w3-row-padding">
 
 
     <div class="w3-col s4">
-      <h7>Broken Nose Records</h7>
+      <h7>Studio Boca</h7>
       <!-- <h8>Deployed App</h8> -->
-     <a href="https://github.com/ramblekb/New_Girl" target="_blank" class="thumbnail">
+     <a href="https://studio-boca.com" target="_blank" class="thumbnail">
       <img src="./assets/images/mercury.jpg" style="width:100%" class="w3-hover-opacity" alt="Crystal Timer">
 
       <h8>GitHub Link</h8>
-      <a href="https://new-girl.herokuapp.com/" target="_blank" class="thumbnail"></a>
-      <p>Description: login, search, buy and trade records.</p>
+      <a href="https://github.com/ramblekb/bocastu" target="_blank" class="thumbnail"></a>
+      <p>Description: Interior Design Small Business Site.</p>
 
     </div>
 
