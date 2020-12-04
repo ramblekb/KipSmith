@@ -1,4 +1,4 @@
-boby html, body, #root {
+html, body, #root {
     padding: 0;
     margin: 0;
     height: 100%;
@@ -10,4 +10,8 @@ boby html, body, #root {
     padding: 20px;
     width: 200px;
     height: 150px;
+  }
+
+  #header1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
